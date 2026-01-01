@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Newsletter</title>
+    <link rel="stylesheet" href="view-newsletter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><p class="bold">Department Newsletter</p></h1>
+            <p class="normal">Stay updated with the latest news and events</p>
+        </header>
+        
+        <div class="newsletter-container">
+            <div class="newsletter-header">
+                <h2><p class="normal">Latest Edition</p></h2>
+                <div class="date" id="current-date">March 31, 2025</div>
+            </div>
+            
+            <!-- Newsletter content area with ID for easy content injection -->
+            <div class="newsletter-content" id="newsletter-display">
+                <!-- The newsletter content will be displayed here -->
+                <p style="text-align: center;" class="normal">Newsletter content will appear here once uploaded.</p>
+            </div>
+            
+            <div class="newsletter-footer">
+                <button class="btn" style="background-color: #190933; margin-right: 10px;" onclick="clearNewsletters()">Clear All Newsletters</button>
+                <p class="normal" style="margin-top: 15px;">To view older editions, <a href="#"> click here!</a></p>
+            </div>
+
+    </div>
+
+    <script src="view-newsletter.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="signup-options.css">
+</head>
+<body>
+  <div class="decoration circle-1"></div>
+  <div class="decoration circle-2"></div>
+  <div class="decoration circle-3"></div>
+  
+  <div class="container">
+    <h1>Choose your path to learning</h1>
+    
+    <div class="cards-container">
+      <!-- Student Card -->
+      <div class="card" id="student-card" data-redirect="student-signup.html">
+        <div class="card-header student-header">
+          <div class="card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="card-content">
+          <div>
+            <h2 class="card-title">Sign Up as a Student</h2>
+            <p class="card-text">Access courses, interact with teachers, and track your progress. Start your learning journey today!</p>
+          </div>
+          <button class="sign-up-btn student-btn">Get Started</button>
+        </div>
+      </div>
+      
+      <!-- Teacher Card -->
+      <div class="card" id="teacher-card" data-redirect="teacher-signup.html">
+        <div class="card-header teacher-header">
+          <div class="card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M20 17a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H9.46c.35.61.54 1.3.54 2h10v11h-9v2h9zM15 7v2H9v2h6v2l4-3-4-3zm-4.54-1H9l-4 2-2-2v12l2-2 2.05 1.03L7 15v-2l4 2v-2L7 9V7l4.46-1z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="card-content">
+          <div>
+            <h2 class="card-title">Sign Up as a Teacher</h2>
+            <p class="card-text">Create courses, connect with students, and share your knowledge with a global audience.</p>
+          </div>
+          <button class="sign-up-btn teacher-btn">Join Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="signup-options.js"></script>
+</body>
+</html>

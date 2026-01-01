@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Dashboard - Papyrus</title>
+    <link rel="stylesheet" href="view-attendance.css">
+
+</head>
+<body>
+    <div class="dashboard">
+        <div class="header"><p class="bold">Attendance Dashboard</p></div>
+        
+        <div class="filter-section">
+            <input type="text" id="searchInput" placeholder="Search by name or roll no...">
+            <button class="filter-btn" id="searchBtn">Search</button>
+        </div>
+        
+        <div class="attendance-stats">
+            <div class="stat-card">
+                <div class="stat-value" id="totalStudents">0</div>
+                <div class="normal">Total Students</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="avgAttendance">0%</div>
+                <div class="normal">Average Attendance</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="ncCount">0</div>
+                <div class="normal">NC Students</div>
+            </div>
+        </div>
+        
+        <div class="summary" id="summary">Loading attendance data...</div>
+        
+        <table class="attendance-list">
+            <thead>
+                <tr>
+                    <th class="normal">Student Name</th>
+                    <th class="normal">Roll No</th>
+                    <th class="normal">Attendance %</th>
+                    <th class="normal">Status</th>
+                </tr>
+            </thead>
+            <tbody id="attendanceTable"></tbody>
+        </table>
+        
+        <a href="AttendanceSystem.html" class="back-btn">Back to Attendance System</a>
+    </div>
+
+    <script src="view-attendance.js"></script>
+</body>
+</html>

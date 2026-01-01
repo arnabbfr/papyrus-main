@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="sign-up.css">
+    
+</head>
+<body>
+    <div class="signup-container">
+        <div class="signup-illustration">
+            <img class="student" src="../papyrus-main/illustrations/student.png" alt="student illustration">
+        </div>
+
+        <div class="signup-box">
+            <div style="font-family: 'Garet'">
+                <h2><p class="bold">Create New Account</p></h2>
+            </div>
+            <p>Already Registered? <a href="login.html">Login</a></p>
+
+            <div id="formContainer">
+                <div id="messageDiv"></div>
+                <form id="signupForm" action="./signup.php" method="POST">
+                    <label for="name">Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="*******"
+                        required
+                    >
+
+                    <label for="dob">Date of Birth</label>
+                    <input
+                        type="date"
+                        id="dob"
+                        name="dob"
+                        required
+                    >
+
+                    <button type="submit">SIGN UP</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="sign-up.js"></script>
+</body>
+</html>

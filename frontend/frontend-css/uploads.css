@@ -1,0 +1,290 @@
+@font-face {
+    font-family:'Garet';
+    src: url('../components/fonts/Web/Garet-Book.woff2')format('woff2'),
+    url('../components/fonts/Web/Garet-Book.woff')format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family:'Garet';
+    src: url('../components/fonts/Web/Garet-Heavy.woff')format('woff2'),
+    url('../components/fonts/Web/Garet-Heavy.woff')format('woff');
+    font-weight: 700;
+    font-style: normal;
+  }
+  .bold{
+    font-family: 'Garet',sans-serif;
+    font-weight: 700;
+  }
+  .normal{
+    font-family: 'Garet',sans-serif;
+    font-weight: 400;
+  }
+
+ body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #fff5e0;
+}
+.container {
+  background: #fFF;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 800px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #190933;
+  font-size: 2rem;
+  font-family: 'Garet',sans-serif;
+  font-weight: 700;
+}
+        .upload-options {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            padding: 10px;
+            scroll-behavior: smooth;
+            scroll-snap-type: x mandatory;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .option {
+            background-color: #ffdbc3;
+            border-radius: 15px;
+            padding: 20px;
+            width: 200px;
+            height: 220px;
+            display: flex;
+            flex: 0 0 auto;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            scroll-snap-align: start;
+        }
+
+        .option:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .option-icon {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 36px;
+            color: #333;
+        }
+
+        .option-label {
+          /* font-family: 'Garet',sans-serif;
+          font-weight: 400; */
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+        }
+        .hidden{
+          display: none;
+      }
+
+        @media (max-width: 680px) {
+            .option {
+                width: 160px;
+                height: 180px;
+            }
+            
+            .option-icon {
+                width: 80px;
+                height: 80px;
+                font-size: 28px;
+            }
+            
+            .option-label {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            
+            .upload-options {
+                gap: 15px;
+            }
+            
+            .option {
+                width: 130px;
+                height: 150px;
+            }
+            
+            .option-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 24px;
+                object-fit: contain;
+            }
+            
+            .carousel-controls {
+                margin-top: 20px;
+            }
+        }
+        .hidden{
+          display: none;
+      }
+
+/* upload-box*/
+@font-face {
+  font-family:'Garet';
+  src: url('../fonts/Web/Garet-Book.woff2')format('woff2'),
+  url('../fonts/Web/Garet-Book.woff')format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family:'Garet';
+  src: url('../fonts/Web/Garet-Heavy.woff')format('woff2'),
+  url('../fonts/Web/Garet-Heavy.woff')format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+.bold{
+  font-family: 'Garet',sans-serif;
+  font-weight: 700;
+}
+.normal{
+  font-family: 'Garet',sans-serif;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Garet', sans-serif;
+}
+.upload-box {
+  border: 2px dashed #333;
+  padding: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  margin: 15px 0;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.upload-box:hover {
+  background: #fff5e0;
+}
+
+.upload-box img {
+  width: 24px;
+  margin-bottom: 8px;
+}
+
+.browse {
+  color: #190933;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* File List */
+.uploads {
+  margin-top: 10px;
+  text-align: left;
+  max-height: 250px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+/* Individual File Box */
+.file-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8f8f8;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  position: relative;
+  font-size: 14px;
+}
+
+.file-name {
+  flex-grow: 1;
+  margin-left: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.file-size {
+  font-size: 12px;
+  color: rgb(29, 140, 160);
+}
+
+.preview-btn, .upload-btn, .delete-btn {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 6px;
+  transition: 0.2s ease-in-out;
+}
+
+.preview-btn:hover {
+  color: #007bff;
+}
+
+.delete-btn:hover {
+  color: red;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  background: #ddd;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.progress {
+  height: 4px;
+  background: #190933;
+}
+
+
+/* Navigation Buttons */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.close-btn{
+  background-color:#190933;
+  color:#ffdbc3;
+  border-radius: 20%;
+}

@@ -1,0 +1,180 @@
+body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #FFF5E0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    
+    .container {
+      text-align: center;
+      width: 100%;
+      max-width: 1000px;
+      padding: 20px;
+    }
+    
+    h1 {
+      color: #190933;
+      margin-bottom: 50px;
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-shadow: 1px 1px 3px rgba(25, 9, 51, 0.1);
+    }
+    
+    .cards-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    
+    .card {
+      background-color: white;
+      width: 300px;
+      height: 380px;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(25, 9, 51, 0.15);
+      transition: all 0.3s ease;
+      position: relative;
+      cursor: pointer;
+    }
+    
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(25, 9, 51, 0.2);
+    }
+    
+    .card-header {
+      height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    
+    .student-header {
+      background-color: #EE9E8E;
+    }
+    
+    .teacher-header {
+      background-color: #FFDBC3;
+    }
+    
+    .card-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 80px;
+      box-shadow: 0 5px 15px rgba(25, 9, 51, 0.1);
+    }
+    
+    .card-icon svg {
+      width: 40px;
+      height: 40px;
+      fill: #190933;
+    }
+    
+    .card-content {
+      padding: 50px 25px 25px;
+      height: calc(100% - 120px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    
+    .card-title {
+      color: #190933;
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-top: 20px;
+      margin-bottom: 15px;
+    }
+    
+    .card-text {
+      color: #666;
+      font-size: 0.95rem;
+      margin-bottom: 30px;
+    }
+    
+    .sign-up-btn {
+      background-color: #190933;
+      color: white;
+      border: none;
+      padding: 14px 30px;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .student-btn:hover {
+      background-color: #EE9E8E;
+    }
+    
+    .teacher-btn:hover {
+      background-color: #FFDBC3;
+      color: #190933;
+    }
+    
+    .decoration {
+      position: absolute;
+      z-index: -1;
+    }
+    
+    .circle-1 {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background-color: rgba(238, 158, 142, 0.15);
+      top: -100px;
+      left: -100px;
+    }
+    
+    .circle-2 {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: rgba(255, 219, 195, 0.2);
+      bottom: 50px;
+      right: 100px;
+    }
+    
+    .circle-3 {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: rgba(25, 9, 51, 0.05);
+      top: 100px;
+      right: -50px;
+    }
+    
+    /* Animation for feedback when clicking */
+    .card.clicked {
+      transform: scale(0.95);
+      opacity: 0.8;
+      transition: all 0.2s ease;
+    }
+    
+    @media (max-width: 768px) {
+      .cards-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .card {
+        margin-bottom: 30px;
+      }
+    }
