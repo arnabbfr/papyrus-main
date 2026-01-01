@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Papyrus - Your Pathway to Productivity</title>
-    <link rel="stylesheet" href="landing-page.css">
+    <link rel="stylesheet" href="../frontend-css/landing-page.css">
 </head>
 <body>
     <div class="app-container">
@@ -18,7 +18,6 @@
                 <a href="#features" class="nav-link">Features</a>
                 <a href="#dashboard" class="nav-link">Dashboard</a>
                 <a href="#resource-management" class="nav-link">Resource</a>
-                <!-- <a href="#timeline" class="nav-link">Timeline</a> -->
                 <a href="#contact" class="nav-link">Contact</a>
             </nav>
             <div class="auth-buttons">
@@ -38,26 +37,14 @@
                     <p class="hero-description">
                         A comprehensive platform for students and teachers to manage attendance,
                         resources, and academic performance in one place.
-                    
                     </p>
 
                     <button onclick= "NavToHome()" class="btn cta-btn" id="getStartedBtn"><p class="bold">Get Started</p></button>
                 </div>  
                 <div class="hero-image">
-                    <img class="AttendanceIllustration" src="C:\Users\HP\Desktop\papyrus-main\illustrations\TrackAttendance.svg" alt="Papyrus dashboard preview">
+                    <img class="AttendanceIllustration" src="../frontend-assets/svg/TrackAttendance.svg" alt="Papyrus dashboard preview">
                 </div>
             </section>
-
-            <!-- <section class="user-tabs">
-                <div class="tab-buttons">
-                    <button class="tab-btn active" data-tab="students">
-                        For Students
-                    </button>
-                    <button class="tab-btn" data-tab="teachers">
-                        For Teachers
-                    </button>
-                </div>
-            </section> -->
 
             <section class="features-showcase" id="features">
                 <h2 class="section-title">Key Features</h2>
@@ -118,7 +105,7 @@
             <section class="dashboard-preview">
                 <h2 class="section-title">Intuitive Dashboard</h2>
                 <div class="dashboard-container">
-                    <img src="../illustrations/Uploads.svg" alt="Papyrus dashboard" class="dashboard-image">
+                    <img src="../frontend-assets/svg/Uploads.svg" alt="Papyrus dashboard" class="dashboard-image">
                 </div>
                 <div class="dashboard-features">
                     <div class="dashboard-feature">
@@ -144,21 +131,21 @@
                 <div class="upload-cards">
                     <div class="upload-card">
                         <div class="upload-icon">
-                            <img class="Upload1" src="../illustrations/Imageuploadbro.svg" alt="Upload images">
+                            <img class="Upload1" src="../frontend-assets/svg/Imageuploadbro.svg" alt="Upload images">
                         </div>
                         <h3>Upload Images</h3>
                         <p>Share diagrams, charts, and visual study materials with your class.</p>
                     </div>
                     <div class="upload-card">
                         <div class="upload-icon">
-                            <img class="Upload2" src="../illustrations/Uploads.svg" alt="Upload notes">
+                            <img class="Upload2" src="../frontend-assets/svg/Uploads.svg" alt="Upload notes">
                         </div>
                         <h3>Upload Notes</h3>
                         <p>Distribute class notes and study guides in various formats.</p>
                     </div>
                     <div class="upload-card">
                         <div class="upload-icon">
-                            <img class="Upload3" src="../illustrations/rightallingedupload.png" alt="Upload question papers">
+                            <img class="Upload3" src="../frontend-assets/images/rightallingedupload.png" alt="Upload question papers">
                         </div>
                         <h3>Upload Question Papers</h3>
                         <p>Share practice tests and previous exam papers for better preparation.</p>
@@ -217,6 +204,6 @@
             </div>
         </footer>
     </div>
-    <script src="landing-page.js"></script>
+    <script src="../frontend-js/landing-page.js"></script>
 </body>
 </html>
