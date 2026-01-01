@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="../frontend-css/view-photos.css">
+</head>
+<body>
+    <div class="dashboard">
+        <h2>Photo Gallery</h2>
+        <div class="gallery" id="gallery">
+            <p class="empty-gallery">Loading gallery...</p>
+        </div>
+        <div id="errorMessage" class="error"></div>
+    </div>
+
+    <div id="fullscreenView" class="fullscreen-overlay">
+        <span class="close-fullscreen" onclick="closeFullscreen()">&times;</span>
+        <img id="fullscreenImage" class="fullscreen-image" src="" alt="Fullscreen view">
+    </div>
+
+    <script src="../frontend-js/view-photos.js"></script>
+</body>
+</html>

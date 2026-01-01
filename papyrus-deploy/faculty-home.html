@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papyrus - Home</title>
+    <link rel="stylesheet" href="../frontend-css/faculty-home.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+</head>
+<body>
+    <div class="sidebar">
+        <a href="#" style="text-decoration: none; color: inherit;">
+            <div class="sidebar-item active">
+                <div class="sidebar-icon"><i class="fas fa-home"></i></div>
+                <div class="sidebar-text">Home</div>
+            </div>
+        </a>
+        <a href="Uploads.html" style="text-decoration: none; color: inherit;">
+            <div class="sidebar-item">
+                <div class="sidebar-icon"><i class="fas fa-upload"></i></div>
+                <div class="sidebar-text">Uploads</div>
+            </div>
+        </a>
+        <a href="view-newsletter.html" style="text-decoration: none; color: inherit;">
+            <div class="sidebar-item">
+                <div class="sidebar-icon"><i class="fas fa-chart-pie"></i></div>
+                <div class="sidebar-text">Newsletter</div>
+            </div>
+        </a>
+        <a href="AttendanceSystem.html" style="text-decoration: none; color: inherit;">
+            <div class="sidebar-item">
+                <div class="notification-badge">3</div>
+                <div class="sidebar-icon"><i class="fas fa-calendar-check"></i></div>
+                <div class="sidebar-text">Attendance</div>
+            </div>
+        </a>
+        <a href="co-po-attainment.html" style="text-decoration: none; color: inherit;">
+            <div class="sidebar-item">
+                <div class="sidebar-icon"><i class="fas fa-book"></i></div>
+                <div class="sidebar-text">Attainment</div>
+            </div>
+        </a>
+        <a href="#" style="text-decoration: none; color: inherit;">
+            <div class="sidebar-item" id="settings-item"    >
+                <div class="sidebar-icon"><i class="fas fa-cog"></i></div>
+                <div class="sidebar-text">Settings</div>
+
+                <div class="settings-dropdown" id="settings-dropdown">
+
+                    <a href="landing-page.html" class="dropdown-item logout-item">
+                        <i class="fas fa-sign-out-alt"></i> Log Out
+                    </a>
+                </div>
+
+            </div>
+        </a>
+    </div>
+
+    <div class="main-content">
+
+        <div class="header">
+            <div class="logo">papy<span>rus</span></div>
+            <div class="user-profile">A</div>
+        </div>
+
+
+        <div class="welcome-banner">
+            <h2 class="welcome-title">Welcome back!</h2>
+            <p class="welcome-message">You have 3 upcoming classes today and 2 assignments due this week. Keep up the good work!</p>
+            <button onclick="NavToScheduleView()" class="get-started-btn">View Schedule</button>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="stat-card">
+                <div class="stat-title">Total Registered Students</div>
+                <div class="stat-number">30</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-title">Total Registered Faculty</div>
+                <div class="stat-number">8</div>
+            </div>
+        </div>
+
+
+        <h3 class="section-title">Today's Schedule</h3>
+        <div class="upcoming-classes">
+            <div class="class-card">
+                <div class="class-time">09:00 - 10:00</div>
+                <div class="class-details">
+                    <h4>Data Structures</h4>
+                    <p>Room Language Lab • 4th Sem • 40 students</p>
+                </div>
+                <div class="class-actions">
+                    <button class="action-btn"><i class="fas fa-clipboard-check"></i></button>
+                    <button class="action-btn"><i class="fas fa-file-upload"></i></button>
+                </div>
+            </div>
+            
+            <div class="class-card">
+                <div class="class-time">11:00 - 12:00</div>
+                <div class="class-details">
+                    <h4>Artificial Intelligence</h4>
+                    <p>Room 106 • 6th Sem • 30 students</p>
+                </div>
+                <div class="class-actions">
+                    <button class="action-btn"><i class="fas fa-clipboard-check"></i></button>
+                    <button class="action-btn"><i class="fas fa-file-upload"></i></button>
+                </div>
+            </div>
+            
+            <div class="class-card">
+                <div class="class-time">14:00 - 15:30</div>
+                <div class="class-details">
+                    <h4>Data Structures</h4>
+                    <p>Lab 1 • 6th Sem • 30 students</p>
+                </div>
+                <div class="class-actions">
+                    <button class="action-btn"><i class="fas fa-clipboard-check"></i></button>
+                    <button class="action-btn"><i class="fas fa-file-upload"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="section-title">Recently Viewed</h3>
+        <div class="recent-items">
+            <div class="recent-item">
+                <div class="item-icon">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <div class="item-details">
+                    <h4>Data Structures Notes</h4>
+                    <p>Accessed 2 hours ago</p>
+                </div>
+            </div>
+            <div class="recent-item">
+                <div class="item-icon">
+                    <i class="fas fa-tasks"></i>
+                </div>
+                <div class="item-details">
+                    <h4>Algorithm Assignment</h4>
+                    <p>Due in 3 days</p>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="section-title">Quick Actions</h3>
+    <div class="quick-actions">
+        <a href="AttendanceSystem.html" style="text-decoration: none; color: inherit;">
+            <div class="action-card">
+                <div class="action-icon">
+                    <i class="fas fa-clipboard-check"></i>
+                </div>
+                <h4 class="action-title">Mark Attendance</h4>
+                <p class="action-desc">Record today's attendance</p>
+            </div>
+        </a>
+        
+        <a href="Uploads.html" style="text-decoration: none; color: inherit;">
+            <div class="action-card">
+                <div class="action-icon">
+                    <i class="fas fa-file-upload"></i>
+                </div>
+                <h4 class="action-title">Upload Resource</h4>
+                <p class="action-desc">Share study materials</p>
+            </div>
+        </a>
+        
+        <a href="schedule-planner.html" style="text-decoration: none; color: inherit;">
+            <div class="action-card">
+                <div class="action-icon">
+                    <i class="fas fa-calendar-plus"></i>
+                </div>
+                <h4 class="action-title">Schedule Event</h4>
+                <p class="action-desc">Create class or meeting</p>
+            </div>
+        </a>
+        
+        <a href="view-photos.html" style="text-decoration: none; color: inherit;">
+            <div class="action-card">
+                <div class="action-icon">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+                <h4 class="action-title">Photo Gallery</h4>
+                <p class="action-desc">View photos</p>
+            </div>
+        </a>
+    </div>
+
+
+     <div class="bottom-nav">
+        <a href="home.html" style="text-decoration: none; width: 20%;">
+            <div class="nav-item active">
+                <div class="nav-icon"><i class="fas fa-home"></i></div>
+                <div class="nav-text">Home</div>
+            </div>
+        </a>
+        
+        <a href="uploads.html" style="text-decoration: none; width: 20%;">
+            <div class="nav-item">
+                <div class="nav-icon"><i class="fas fa-upload"></i></div>
+                <div class="nav-text">Uploads</div>
+            </div>
+        </a>
+        
+        <a href="dashboard.html" style="text-decoration: none; width: 20%;">
+            <div class="nav-item">
+                <div class="nav-icon"><i class="fas fa-chart-pie"></i></div>
+                <div class="nav-text">Dashboard</div>
+            </div>
+        </a>
+        <script src="faculty-Home.js"></script>
+</body>
+</html>

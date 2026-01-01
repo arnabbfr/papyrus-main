@@ -1,0 +1,70 @@
+body {
+            font-family: Arial, sans-serif;
+            background-color: #FFF5E0;
+            color: #190933;
+            margin: 0;
+            padding: 20px;
+        }
+        .dashboard {
+            max-width: 800px;
+            margin: auto;
+            background: #FFDBC3;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .file-list {
+            list-style: none;
+            padding: 0;
+        }
+        .file-list li {
+            background: #EE9E8E;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        .download-btn {
+            background: #190933;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .download-btn:hover {
+            background: #000000;
+        }
+        h2 {
+            margin-bottom: 15px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #190933;
+        }
+        .error {
+            color: red;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            background: #190933;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .empty-message {
+            padding: 15px;
+            background: #fff;
+            border-radius: 5px;
+            margin-top: 20px;
+        }

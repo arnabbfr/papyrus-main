@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Notes</title>
+    <link rel="stylesheet" href="../frontend-css/view-notes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+</head>
+<body>
+    <div class="container">
+        <a href="Uploads.html" class="back-link">← Back to Upload</a>
+        
+        <header>
+            <h1><p class="bold">Notes & Minutes</p></h1>
+            <p class="normal">View and download all uploaded notes and meeting minutes</p>
+        </header>
+        
+        <div class="notes-container">
+            <div class="notes-header">
+                <h2><p class="bold">All Documents</p></h2>
+                <div class="filter-container">
+                    <select id="sort-filter" class="filter-select">
+                        <option value="newest">Newest First</option>
+                        <option value="oldest">Oldest First</option>
+                        <option value="name-asc">Name (A-Z)</option>
+                        <option value="name-desc">Name (Z-A)</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="notes-grid" id="notes-grid">
+                <!-- Notes will be dynamically inserted here -->
+                <div class="no-notes" id="no-notes">
+                    <p class="normal">No notes or minutes have been uploaded yet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../frontend-js/view-notes.js"></script>
+</body>
+</html>

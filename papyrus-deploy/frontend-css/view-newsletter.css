@@ -1,0 +1,160 @@
+ @font-face {
+
+    font-family:'Garet';
+    src: url('../new-papyrus-fy/fonts/Web/Garet-Book.woff2') format('woff2'),
+    url('../new-papyrus-fy/fonts/Web/Garet-Book.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+    }
+    @font-face {
+    font-family:'Garet';
+    src: url('../new-papyrus-fy/fonts/Web/Garet-Heavy.woff') format('woff2'),
+    url('../new-papyrus-fy/fonts/Web/Garet-Heavy.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    }
+
+    .bold{
+    font-family: 'Garet', sans-serif;
+    font-weight: 700;
+    }
+    .normal{
+    font-family: 'Garet', sans-serif;
+    font-weight: 400;
+}
+        
+        :root {
+            --dark-purple: #190933;
+            --peach: #ffdbc3;
+            --cream: #fff5e0;
+            --coral: #ee9e8e;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif; /* Using Poppins as Garet isn't available via CDN */
+            background-color: var(--cream);
+            color: var(--dark-purple);
+            line-height: 1.6;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        h1 {
+            color: var(--dark-purple);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .newsletter-container {
+            background-color: var(--peach);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 8px 30px rgba(25, 9, 51, 0.1);
+            margin-bottom: 2rem;
+        }
+        
+        .newsletter-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .date {
+            color: var(--dark-purple);
+            font-weight: 500;
+        }
+        
+        .newsletter-content {
+            background-color: white;
+            border-radius: 15px;
+            min-height: 500px;
+            padding: 2rem;
+            /* This is the container where the newsletter will be displayed */
+        }
+        
+        .newsletter-footer {
+            margin-top: 1.5rem;
+            text-align: center;
+            color: var(--dark-purple);
+        }
+        
+        .btn {
+            background-color: var(--coral);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #e08c7c;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            color: var(--dark-purple);
+            font-size: 0.9rem;
+        }
+        
+        /* Color palette display */
+        .color-palette {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .color-swatch {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            position: relative;
+        }
+        
+        .color-swatch::after {
+            content: attr(data-color);
+            position: absolute;
+            bottom: -25px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 0.75rem;
+        }
+        
+        .dark-purple {
+            background-color: var(--dark-purple);
+        }
+        
+        .peach {
+            background-color: var(--peach);
+        }
+        
+        .cream {
+            background-color: var(--cream);
+            border: 1px solid #ddd;
+        }
+        
+        .coral {
+            background-color: var(--coral);
+        }
